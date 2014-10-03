@@ -5,10 +5,16 @@
 #pragma mark - BTNSerializable
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
-    self = [super init];
-    if (self) {
-        // Initilization code
+    if (![[self class] canInitWithDictionary:dictionary]) {
+        return nil;
     }
+    
+    self = [super init];
+    
+    if (self) {
+        [self updateWithRepresentation:dictionary];
+    }
+    
     return self;
 }
 
@@ -32,11 +38,11 @@
     return NO;
 }
 
-// Optional
-//
-//- (void)updateWithRepresentation:(NSDictionary *)dictionary {
-//
-//}
+
+- (void)updateWithRepresentation:(NSDictionary *)dictionary {
+    // Update the instance here.
+}
+
 
 
 #pragma mark - NSObject Extensions
@@ -56,11 +62,11 @@
 //        return NO;
 //    }
 //    
-//    return [self isEqualTo<#ObjectName#>:(<#Class#> *)object];
+//    return [self isEqualTo<#ObjectName#>:object];
 }
 
 
-//- (BOOL)isEqualTo<#ObjectName#>:(<#Class#> *)object {
+//- (BOOL)isEqualTo<#ObjectName#>:(<#Class#>object {
 #warning You must implement -isEqualTo…:.
 //    if (!object) {
 //        return NO;
@@ -83,7 +89,7 @@
 
 
 - (id)copyWithZone:(NSZone *)zone {
-    ___FILEBASENAMEASIDENTIFIER___ *copy = [[[self class] alloc] initWithDictionary:self dictionaryRepresentation];
+    ___FILEBASENAMEASIDENTIFIER___ *copy = [[[self class] alloc] initWithDictionary:[self dictionaryRepresentation]];
     return copy;
 }
 
