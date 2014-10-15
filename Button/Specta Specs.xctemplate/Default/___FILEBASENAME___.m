@@ -1,7 +1,7 @@
 #import "Specta.h"
-#import "___FILEBASENAME___.h"
+___IMPORTHEADER_subjectClassName___
 
-SpecBegin(___FILEBASENAMEASIDENTIFIER___)
+SpecBegin(___VARIABLE_subjectClassName:identifier___)
 
 describe(<#NSString *name#>, ^{
     
