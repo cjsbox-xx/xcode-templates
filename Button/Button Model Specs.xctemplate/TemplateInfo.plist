@@ -10,7 +10,7 @@
 	<key>DefaultCompletionName</key>
 	<string>MySpec</string>
 	<key>Description</key>
-	<string>A Specta spec file for a Button model class</string>
+	<string>A Specta spec file for a BTNModelObject subclass</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
@@ -25,13 +25,15 @@
 	<array>
 		<dict>
 			<key>Identifier</key>
-			<string>subjectClassName</string>
+			<string>classToSpecName</string>
+			<key>Default</key>
+			<string>BTN</string>
 			<key>Name</key>
-			<string>Class</string>
+			<string>Class Name</string>
 			<key>Description</key>
 			<string>The class to spec</string>
 			<key>Type</key>
-			<string>class</string>
+			<string>text</string>
 			<key>Required</key>
 			<true/>
 			<key>NotPersisted</key>
@@ -39,11 +41,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_subjectClassName:identifier___Spec</string>
+			<string>___VARIABLE_classToSpecName___Spec</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
 			<string>static</string>
+			<key>Name</key>
+			<string>Spec Name</string>
 		</dict>
 	</array>
 	<key>SortOrder</key>

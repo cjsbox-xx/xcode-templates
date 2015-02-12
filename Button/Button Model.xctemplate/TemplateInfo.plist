@@ -19,37 +19,17 @@
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the class to create</string>
+			<string>The name of the Button model class to create</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Name</key>
-			<string>Class</string>
+			<string>Model Class</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
 			<string>text</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>NSObject</string>
-			<key>Description</key>
-			<string>What class to subclass in the new file</string>
-			<key>FallbackHeader</key>
-			<string>#import &lt;Foundation/Foundation.h&gt;</string>
-			<key>Identifier</key>
-			<string>cocoaTouchSubclass</string>
-			<key>Name</key>
-			<string>Subclass of</string>
-			<key>Required</key>
-			<string>YES</string>
-			<key>Type</key>
-			<string>class</string>
-			<key>Values</key>
-			<array>
-				<string>NSObject</string>
-			</array>
 		</dict>
 	</array>
 	<key>Platforms</key>
