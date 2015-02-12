@@ -6,19 +6,15 @@ A collection of Xcode templates tailored to the Button iOS style conventions.
 
 ##Installation
 
-1) Clone the repo somewhere your home directory:
+1) Clone the repo and cd into it:
 ```
-➜ cd
-➜ mkdir .coolness
-➜ cd .coolness
 ➜ git clone git@github.com:usebutton/XcodeTemplates.git
+➜ cd XcodeTemplates
 ```
 
-2) Navigate the the Xcode Templates directory and symlink the Button directory of templates to the Xcode template directory:
+2) Run the install script
 ```
-➜ cd ~/Library/Developer/Xcode/Templates/
-➜ ln -s ~/.coolness/XcodeTemplates/Button
-
+➜ ./install.sh
 ```
 
 3) Quit and re-launch Xcode and you should now see the following when creating a new file:
