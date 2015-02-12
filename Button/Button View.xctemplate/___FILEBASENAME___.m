@@ -4,6 +4,7 @@
 
 @end
 
+
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
 #pragma mark - Initialization
@@ -23,9 +24,22 @@
 }
 
 
+- (void)didAppear {
+    [super didAppear];
+    
+}
+
+
 - (void)willDisappear {
     [super willDisappear];
     
 }
+
+
+- (void)didDisappear {
+    [super didDisappear];
+    
+}
+
 
 @end
