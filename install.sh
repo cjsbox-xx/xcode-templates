@@ -8,6 +8,10 @@ if [ $EUID != 0 ]; then
     exit $?
 fi
 
+if [ ! -d "$XCODE_TEMPLATES_DIR" ]; then
+   mkdir -p "$XCODE_TEMPLATES_DIR"
+fi
+
 if [ ! -d "$BTN_TEMPLATES_DIR" ]; then
   mkdir -p "$BTN_TEMPLATES_DIR"
 fi
