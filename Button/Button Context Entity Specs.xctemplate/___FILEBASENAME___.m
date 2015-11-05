@@ -11,7 +11,7 @@ NSDictionary *dict2 = @{ @"type": @"<#type#>", <#key#>: <#differentValue#> };
 describe(@"Initialization", ^{
     
     it(@"creates an instance from a valid dictionary", ^{
-        ___VARIABLE_classToSpecName___ *object = [[___VARIABLE_classToSpecName___ alloc] initWithDictionary:representation];
+        ___VARIABLE_classToSpecName___ *object = [[___VARIABLE_classToSpecName___ alloc] initWithDictionary:dict1];
 #warning compare object's properties are equal to corresponding representation values
     });
     

@@ -6,7 +6,7 @@
 #pragma mark - Getters
 
 - (<#class#>)<#property#> {
-    return self[BTNContext<#Specifier#>Key];
+    return [self valueForKey:<#key#> ifClass:<#class#>];
 }
 
 
@@ -27,7 +27,7 @@
 
 - (NSDictionary *)dictionaryRepresentation {
     self.mutableContext[BTNContextTypeKey] = @"<#type#>";
-    return [self.mutableContext DPL_JSONObject];
+    return [self.mutableContext BTN_JSONSerlized];
 }
 
 
