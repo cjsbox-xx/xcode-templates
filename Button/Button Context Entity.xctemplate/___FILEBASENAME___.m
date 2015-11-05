@@ -27,7 +27,7 @@
 
 - (NSDictionary *)dictionaryRepresentation {
     self.mutableContext[BTNContextTypeKey] = @"<#type#>";
-    return [self.mutableContext DPL_JSONObect];
+    return [self.mutableContext DPL_JSONObject];
 }
 
 
