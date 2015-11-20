@@ -1,5 +1,5 @@
 #import "Specta.h"
-#import "___VARIABLE_classToSpecName____+Fixture.h"
+#import "___VARIABLE_classToSpecName___+Fixture.h"
 
 SpecBegin(___VARIABLE_classToSpecName___)
 
@@ -8,7 +8,7 @@ SpecBegin(___VARIABLE_classToSpecName___)
 describe(@"Initialization", ^{
     
     it(@"should create an instance from a valid dictionary", ^{
-        ___VARIABLE_classToSpecName___ *object = [[___VARIABLE_classToSpecName___ alloc] initWithDictionary:[___VARIABLE_classToSpecName____ dict1]];
+        ___VARIABLE_classToSpecName___ *object = [[___VARIABLE_classToSpecName___ alloc] initWithDictionary:[___VARIABLE_classToSpecName___ dict1]];
     });
 });
 
@@ -21,8 +21,8 @@ describe(@"___VARIABLE_classToSpecName___", ^{
     // as well as instance equality, serialization, and copying.
     
     itBehavesLike(@"BTNModelObject", @{ @"class": [___VARIABLE_classToSpecName___ class],
-                                        @"rep1": [___VARIABLE_classToSpecName____ dict1],
-                                        @"rep2": [___VARIABLE_classToSpecName____ dict2] });
+                                        @"rep1": [___VARIABLE_classToSpecName___ dict1],
+                                        @"rep2": [___VARIABLE_classToSpecName___ dict2] });
 });
 
 SpecEnd

@@ -1,4 +1,4 @@
-#import "___FILEBASENAME____.h"
+#import "___FILEBASENAME___.h"
 
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
