@@ -1,23 +1,15 @@
 #import "Specta.h"
-#import "___VARIABLE_classToSpecName____Private.h"
+#import "___VARIABLE_classToSpecName____+Fixture.h"
 
 SpecBegin(___VARIABLE_classToSpecName___)
-
-#warning create your object representations
-NSDictionary *dict1 = @{ <#key#>: <#value#> };
-NSDictionary *dict2 = @{ <#key#>: <#differentValue#> };
-
 
 #pragma mark - Initialization
 
 describe(@"Initialization", ^{
     
     it(@"should create an instance from a valid dictionary", ^{
-        ___VARIABLE_classToSpecName___ *object = [[___VARIABLE_classToSpecName___ alloc] initWithDictionary:representation];
-#warning compare object's properties are equal to corresponding representation values
+        ___VARIABLE_classToSpecName___ *object = [[___VARIABLE_classToSpecName___ alloc] initWithDictionary:[___VARIABLE_classToSpecName____ dict1]];
     });
-    
-#warning add any other relevant initialization specs here
 });
 
 
@@ -29,8 +21,8 @@ describe(@"___VARIABLE_classToSpecName___", ^{
     // as well as instance equality, serialization, and copying.
     
     itBehavesLike(@"BTNModelObject", @{ @"class": [___VARIABLE_classToSpecName___ class],
-                                        @"rep1": dict1,
-                                        @"rep2": dict2 });
+                                        @"rep1": [___VARIABLE_classToSpecName____ dict1],
+                                        @"rep2": [___VARIABLE_classToSpecName____ dict2] });
 });
 
 SpecEnd

@@ -38,6 +38,8 @@
 			<string>NSObject</string>
 			<key>Description</key>
 			<string>Which class to add a category to</string>
+			<key>FallbackHeader</key>
+			<string>@import Foundation;</string>
 			<key>Identifier</key>
 			<string>categoryClass</string>
 			<key>Name</key>
