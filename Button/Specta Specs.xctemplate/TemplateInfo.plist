@@ -10,7 +10,7 @@
 	<key>DefaultCompletionName</key>
 	<string>MySpec</string>
 	<key>Description</key>
-	<string>A Specta spec file for a Button model class</string>
+	<string>A Specta spec file</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
