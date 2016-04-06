@@ -1,4 +1,3 @@
-#import "Specta.h"
 #import "___VARIABLE_classToSpecName____Private.h"
 #import "BTNBaseEntity_Private.h"
 

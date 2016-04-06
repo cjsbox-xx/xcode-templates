@@ -1,4 +1,3 @@
-#import "Specta.h"
 #import "___VARIABLE_classToSpecName___+Fixture.h"
 
 SpecBegin(___VARIABLE_classToSpecName___)
